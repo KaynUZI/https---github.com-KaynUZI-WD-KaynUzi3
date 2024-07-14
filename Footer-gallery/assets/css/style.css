@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.footer-design {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #e0ffe0;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-design .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-design .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-design .social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-design .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-design form {
+    display: flex;
+}
+
+.footer-design input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.footer-design button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-design span {
+    margin-left: 10px;
+}

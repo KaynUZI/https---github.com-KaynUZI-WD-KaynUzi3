@@ -1,0 +1,52 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.company-logo {
+  width: 100px;
+  height: auto;
+}
+
+.navigation .navigation-content {
+  transition: all 0.3s ease;
+}
+
+.design-one-animation .navigation-content:hover,
+.design-two-animation .navigation-content:hover,
+.design-three-animation .navigation-content:hover,
+.design-four-animation .navigation-content:hover,
+.design-five-animation .navigation-content:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+.design-two-animation .navigation-content[data-text]:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.design-three-animation .navigation-content:hover {
+  opacity: 0.7;
+}
+
+.design-four-animation .navigation-content {
+  transition: opacity 0.5s ease;
+}
+
+.design-four-animation .navigation-content:hover {
+  opacity: 0.5;
+}
+
+.design-five-animation .nav-content:hover {
+  transform: scale(1.2);
+}
+
+.design-five-animation .socials:hover {
+  transform: scale(1.2);
+}

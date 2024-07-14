@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.design1 header {
+  background-color: #cf3535;
+}
+
+.design2 header {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.design3 header {
+  background-color: #5d6e7e;
+}
+
+.design4 header {
+  background-color: #6e430b;
+}
+
+.design5 header {
+  background-color: #f8f9fa;
+}
+
+.company-logo {
+  width: 50px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-content {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.design2 .navigation-content {
+  color: #000000;
+}
+
+.design2 .navigation-content.call-to-action {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+.design3 .navigation-content {
+  color: #333;
+}
+
+.design3 i {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.design4 .company-logo {
+  margin: 0 20px;
+}
+
+.design5 .nav-content {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.design5 .socials {
+  margin-left: 20px;
+}
+
+section {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+header.design-one-animation .navigation-content:hover {
+  color: #ff0000;
+}
+
+header.design-two-animation .navigation-content {
+  position: relative;
+}
+
+header.design-two-animation .navigation-content::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-size: 12px;
+  color: #333;
+  display: none;
+}
+
+header.design-two-animation .navigation-content:hover::before {
+  display: block;
+}
+
+header.design-three-animation .navigation-content {
+  opacity: 0.5;
+}
+
+header.design-three-animation .navigation-content:hover {
+  opacity: 1;
+}
+
+header.design-four-animation {
+  position: relative;
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header.design-five-animation .navigation-content {
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+header.design-five-animation .navigation-content:hover {
+  transform: scale(1.2);
+  background-color: #333;
+  color: #fff;
+}
