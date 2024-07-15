@@ -11,16 +11,19 @@ body {
   transition: all 0.3s ease;
 }
 
-.design-one-animation .navigation-content:hover,
-.design-two-animation .navigation-content:hover,
-.design-three-animation .navigation-content:hover,
-.design-four-animation .navigation-content:hover,
-.design-five-animation .navigation-content:hover {
-  transform: scale(1.1);
-  color: #007bff;
+
+.design1 .navigation-content:hover,
+.design2 .navigation-content:hover,
+.design3 .navigation-content:hover,
+.design4 .navigation-content:hover,
+.design5 .navigation-content:hover {
+
+  transform: none;
+  color: inherit;
 }
 
-.design-two-animation .navigation-content[data-text]:hover::after {
+
+.design2 .navigation-content[data-text]:hover::after {
   content: attr(data-text);
   position: absolute;
   bottom: -20px;
@@ -31,22 +34,22 @@ body {
   font-size: 0.9rem;
 }
 
-.design-three-animation .navigation-content:hover {
+.design3 .navigation-content:hover {
   opacity: 0.7;
 }
 
-.design-four-animation .navigation-content {
+.design4 .navigation-content {
   transition: opacity 0.5s ease;
 }
 
-.design-four-animation .navigation-content:hover {
+.design4 .navigation-content:hover {
   opacity: 0.5;
 }
 
-.design-five-animation .nav-content:hover {
+.design5 .nav-content:hover {
   transform: scale(1.2);
 }
 
-.design-five-animation .socials:hover {
+.design5 .socials:hover {
   transform: scale(1.2);
 }

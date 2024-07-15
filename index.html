@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Header and Footer Display</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
-
-  <!-- CDNJS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -25,6 +23,9 @@
     .container {
       text-align: center;
       color: white;
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
     }
 
     .logo {
@@ -32,13 +33,7 @@
       margin-bottom: 20px;
     }
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .button {
+    .header-btn, .footer-btn {
       padding: 10px 20px;
       font-size: 18px;
       color: white;
@@ -46,6 +41,17 @@
       border: 2px solid white;
       border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .header-btn {
+      left: 20px;
+    }
+
+    .footer-btn {
+      right: 20px;
     }
 
     .button:hover {
@@ -59,10 +65,8 @@
     <h1>Header and Footer Display</h1>
     <p>A landing page showcasing header and footer designs for a web project.</p>
     <img src="./assets/img/Front page logo.png" alt="Background Logo" class="logo" />
-    <div class="buttons">
-      <a href="./Header-gallery/index.html" class="button">Header</a>
-      <a href="./Footer-gallery/index.html" class="button">Footer</a>
-    </div>
+    <a href="./Header-gallery/index.html" class="header-btn">Header</a>
+    <a href="./Footer-gallery/index.html" class="footer-btn">Footer</a>
   </div>
 </body>
 </html>
