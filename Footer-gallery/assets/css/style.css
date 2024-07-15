@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: beige;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h1 {
     transition: color 0.3s ease;
 }
 
-.footer-design .social-icons a:hover {
+.footer-design .social-icons {
     color: #007bff;
 }
 
@@ -59,4 +60,132 @@ h1 {
 
 .footer-design span {
     margin-left: 10px;
+}
+
+/* Animation Footers */
+.footer-animated {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#animated1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#animated2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#animated3:hover {
+    transform: rotate(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#animated4:hover {
+    transform: skewX(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#animated5:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes flipIn {
+    from {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+.design1 .navigation-content:hover,
+.design2 .navigation-content:hover,
+.design3 .navigation-content:hover,
+.design4 .navigation-content:hover,
+.design5 .navigation-content:hover {
+
+  transform: none;
+  color: inherit;
+}
+
+
+.design2 .navigation-content[data-text]:hover::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.design3 .navigation-content:hover {
+  opacity: 0.7;
+}
+
+.design4 .navigation-content {
+  transition: opacity 0.5s ease;
+}
+
+.design4 .navigation-content:hover {
+  opacity: 0.5;
+}
+
+.design5 .nav-content:hover {
+  transform: scale(1.2);
+}
+
+.design5 .socials:hover {
+  transform: scale(1.2);
 }
